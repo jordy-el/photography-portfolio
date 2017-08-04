@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170804062413) do
+ActiveRecord::Schema.define(version: 20170804080127) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20170804062413) do
     t.text "bio_body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "bio_image_file_name"
+    t.string "bio_image_content_type"
+    t.integer "bio_image_file_size"
+    t.datetime "bio_image_updated_at"
   end
 
 end

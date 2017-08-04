@@ -19,6 +19,6 @@ class AdminController < ApplicationController
   end
 
   def admin_attributes
-    params.require(:krissi).permit(:linkedin, :instagram, :facebook, :contact_body, :bio_body)
+    params.require(:krissi).permit(:linkedin, :instagram, :facebook, :contact_body, :bio_body, :bio_image)
   end
 end

@@ -17,7 +17,7 @@
                     <%= simple_format(@krissi.bio_body, class: 'uk-text-center custom-font-2') %>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1@s">
-                    <img class="uk-box-shadow-small uk-align-center uk-border-rounded uk-height-max-large" src="http://willchaophotography.com/wp-content/uploads/2016/02/melbourne-wedding-photographer-jade144.jpg">
+                    <%= image_tag @krissi.bio_image.url(:medium), class: 'uk-box-shadow-small uk-align-center uk-border-rounded uk-height-max-large' %>
                 </div>
             </header>
         </article>
