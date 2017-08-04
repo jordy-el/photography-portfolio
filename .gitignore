@@ -22,3 +22,6 @@
 
 public/img/*
 public/system/
+
+# Ignore application configuration
+/config/application.yml

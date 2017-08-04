@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk'
+gem 'figaro'
