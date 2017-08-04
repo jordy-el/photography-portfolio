@@ -14,7 +14,7 @@
                     <h4 class="uk-text-lead uk-margin-remove custom-font-1 uk-text-center">Krissi Flynn</h4>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1@s">
-                    <p class="uk-text-center custom-font-2"><%= @krissi.bio_body %></p>
+                    <%= simple_format(@krissi.bio_body, class: 'uk-text-center custom-font-2') %>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1@s">
                     <img class="uk-box-shadow-small uk-align-center uk-border-rounded uk-height-max-large" src="http://willchaophotography.com/wp-content/uploads/2016/02/melbourne-wedding-photographer-jade144.jpg">
