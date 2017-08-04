@@ -1,0 +1,13 @@
+<%= form_for @krissi, url: admin_path(@krissi), method: :patch do |f| %>
+    <%= f.label :linkedin %>
+    <%= f.text_field :linkedin %>
+    <%= f.label :instagram %>
+    <%= f.text_field :instagram %>
+    <%= f.label :facebook %>
+    <%= f.text_field :facebook %>
+    <%= f.label :contact_body %>
+    <%= f.text_area :contact_body %>
+    <%= f.label :bio_body %>
+    <%= f.text_area :bio_body %>
+    <%= f.submit 'Save' %>
+<% end %>
