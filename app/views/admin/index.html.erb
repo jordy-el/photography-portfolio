@@ -15,5 +15,7 @@
 <% end %>
 
 <% @krissi.samples.each do |s| %>
-    <%= link_to s.caption, edit_sample_path(s) %>
+    <%= link_to edit_sample_path(s) do %>
+        <%= image_tag s.image.url(:thumb), height: '200', width: '200' %>
+    <% end %>
 <% end %>
