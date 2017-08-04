@@ -1,0 +1,9 @@
+<div>
+    <%= link_to sample.image.url(:original), class: 'uk-child-width-1-1 uk-inline-clip uk-transition-toggle uk-light', caption: sample.caption do %>
+        <%= image_tag sample.image.url(:thumb), alt: sample.alt %>
+        <div class="uk-position-center uk-text-center">
+            <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove"><%= sample.category %></h4></div>
+            <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove"><%= sample.caption %></h4></div>
+        </div>
+    <% end %>
+</div>
