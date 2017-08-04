@@ -1,7 +1,8 @@
 class Krissi < ApplicationRecord
   has_attached_file :bio_image, styles: { medium: '1000x1000#' }, default_url: 'https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/18809160_239275669889184_840459996712927232_n.jpg'
   validates_attachment_content_type :bio_image, content_type: /\Aimage\/.*\z/
-  has_many :samples
+  has_many :samples, dependent: :destroy
+  has_many :parallaxes, dependent: :destroy
   validate :only_one, on: :create
   validates :linkedin, presence: true
   validates :instagram, presence: true

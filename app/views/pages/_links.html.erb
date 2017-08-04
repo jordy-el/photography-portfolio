@@ -1,7 +1,5 @@
 <div class="uk-section-muted uk-child-width-1-1 uk-grid-collapse page-section" uk-grid>
-    <div class="page-section-half uk-background-cover uk-light uk-flex" uk-parallax="bgy: 350" style="background-image: url('img/samples/parallax_2.jpg')">
-        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical handwriting"></h1>
-    </div>
+    <%= render 'parallax', image: @krissi.parallaxes.third.image %>
     <div id="fourth-section">
         <div class="uk-card uk-card-default uk-card-small" uk-sticky="offset: 80; bottom: true">
             <div class="uk-text-center uk-card-body uk-text-lead handwriting">

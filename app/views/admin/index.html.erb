@@ -19,3 +19,9 @@
         <%= image_tag s.image.url(:thumb), height: '200', width: '200' %>
     <% end %>
 <% end %>
+
+<% @krissi.parallaxes.each do |p| %>
+    <%= link_to edit_parallax_path(p) do %>
+        <%= image_tag p.image.url, height: '400', width: '500' %>
+    <% end %>
+<% end %>
