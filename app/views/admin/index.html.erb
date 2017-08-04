@@ -13,3 +13,7 @@
     <%= f.file_field :bio_image %>
     <%= f.submit 'Save' %>
 <% end %>
+
+<% @krissi.samples.each do |s| %>
+    <%= link_to s.caption, edit_sample_path(s) %>
+<% end %>

@@ -1,6 +1,6 @@
 class Sample < ApplicationRecord
   belongs_to :krissi
-  has_attached_file :image, styles: { thumb: '500x500#' }, default_url: 'http://via.placeholder.com/500x500.jpg'
+  has_attached_file :image, styles: { thumb: '640x640#' }, default_url: 'http://via.placeholder.com/640x640.jpg'
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
   validates :caption, presence: true
   validates :category, presence: true
