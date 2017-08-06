@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
   # Clearance Routes
-  resource :session, controller: "clearance/sessions", only: [:create]
+  resource :session, controller: "sessions", only: [:create]
 
-  get "/sign_in", to: "clearance/sessions#new", as: :sign_in
+  get "/login", to: "clearance/sessions#new", as: :sign_in
   delete "/sign_out", to: "clearance/sessions#destroy", as: :sign_out
 
   # App Routes
