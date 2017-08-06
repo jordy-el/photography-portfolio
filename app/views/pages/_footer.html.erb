@@ -1,5 +1,15 @@
 <nav class="uk-navbar-container" style="background-color: #222 !important; height: 80px !important;" uk-navbar>
-    <div class="uk-navbar-left custom-font-1"></div>
+    <div class="uk-navbar-left">
+        <% if signed_in? %>
+            <ul class="uk-navbar-nav">
+                <li class="uk-navbar-item">
+                    <div>
+                        <%= link_to 'Sign Out', sign_out_path, class: 'custom-font-1', style: 'color: #d3d3d3;' %>
+                    </div>
+                </li>
+            </ul>
+        <% end %>
+    </div>
     <div class="uk-navbar-center custom-font-1">
         <ul class="uk-navbar-nav">
             <li class="uk-navbar-item">
