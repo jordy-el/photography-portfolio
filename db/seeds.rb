@@ -7,7 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Krissi.find_each(&:destroy)
+User.find_each(&:destroy)
 
 @krissi = Krissi.create!(linkedin: 'https://www.linkedin.com', instagram: 'https://www.instagram.com', facebook: 'https://www.facebook.com', contact_body: 'I have contact methods', bio_body: 'I was born')
 8.times { |n| Sample.create!(caption: n.to_s, category: n.to_s, alt: n.to_s, krissi: @krissi) }
 3.times { Parallax.create!(krissi: @krissi) }
+
+User.create!(email: Figaro.env.krissi_email, password: Figaro.env.krissi_password)
