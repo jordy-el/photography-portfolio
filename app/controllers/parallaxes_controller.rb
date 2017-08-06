@@ -8,6 +8,7 @@ class ParallaxesController < ApplicationController
     if @parallax.update_attributes(parallax_params)
       redirect_to admin_url
     else
+      # TODO Implement errors
       throw "INVALID"
     end
   end

@@ -8,6 +8,7 @@ class SamplesController < ApplicationController
     if @sample.update_attributes(sample_params)
       redirect_to admin_url
     else
+      # TODO Implement errors
       throw "INVALID"
     end
   end

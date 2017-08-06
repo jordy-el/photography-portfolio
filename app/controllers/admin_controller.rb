@@ -6,8 +6,9 @@ class AdminController < ApplicationController
 
   def update
     if @krissi.update_attributes!(admin_attributes)
-      redirect_to admin_index_url
+      redirect_to admin_url
     else
+      # TODO Implement errors
       throw 'INVALID'
     end
   end
