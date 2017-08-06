@@ -4,9 +4,9 @@
         <h1 class="handwriting">Log In</h1>
         <%= form_for :session, url: session_path do |f| %>
             <div class="uk-margin" uk-margin><%= f.label :email, class: 'uk-form-label custom-font-1' %></div>
-            <div class="uk-margin" uk-margin><%= f.email_field :email, class: 'uk-input' %></div>
+            <div class="uk-margin" uk-margin><%= f.email_field :email, class: 'uk-input custom-font-2' %></div>
             <div class="uk-margin" uk-margin><%= f.label :password, class: 'uk-form-label custom-font-1' %></div>
-            <div class="uk-margin" uk-margin><%= f.password_field :password, class: 'uk-input' %></div>
+            <div class="uk-margin" uk-margin><%= f.password_field :password, class: 'uk-input custom-font-2' %></div>
             <div class="uk-margin" uk-margin>
                 <%= f.submit 'Submit', class: 'uk-button uk-button-primary custom-font-1' %>
                 <%= link_to 'Back', root_path, class: 'uk-button uk-button-secondary custom-font-1', id: 'back-button' %>
