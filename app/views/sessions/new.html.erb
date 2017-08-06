@@ -1,13 +1,5 @@
 <%= form_for :session, url: session_path, html: { id: 'sign_in_form' } do |f| %>
-    <%= f.hidden_field :email %>
-    <%= f.hidden_field :password %>
+    <%= f.email_field :email %>
+    <%= f.password_field :password %>
+    <%= f.submit %>
 <% end %>
-<script>
-    $(document).ready(function() {
-        var email = prompt('Email: ');
-        var password = prompt('Password: ');
-        $('#session_email').val(email);
-        $('#session_password').val(password);
-        $('#sign_in_form').submit();
-    });
-</script>

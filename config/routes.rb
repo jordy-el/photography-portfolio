@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resource :session, controller: "sessions", only: [:create]
 
   get "/login", to: "clearance/sessions#new", as: :sign_in
-  delete "/sign_out", to: "clearance/sessions#destroy", as: :sign_out
+  delete "/sign_out", to: "sessions#destroy", as: :sign_out
 
   # App Routes
   root 'pages#home'
