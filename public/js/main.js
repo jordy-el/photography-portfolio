@@ -1,2 +1,0 @@
-$('Document').ready(function() {
-});

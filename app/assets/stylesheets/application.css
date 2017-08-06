@@ -11,5 +11,10 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require vendor/normalize
+ *= require vendor/uikit.min
+ *= require vendor/ui-button.min
+ *= require vendor/ui-icon.min
+ *= require main
  *= require_self
  */

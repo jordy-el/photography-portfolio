@@ -285,11 +285,11 @@ textarea {
 
 @font-face {
     font-family: 'Handwriting';
-    src: url('../fonts/PhontPhreaks-Handwriting.ttf');
+    src: font-url('PhontPhreaks-Handwriting.ttf');
 }
 
 .handwriting {
-    font-family: 'Handwriting', sans-serif;
+    font-family: 'Handwriting', sans-serif !important;
 }
 
 .custom-font-1 {
@@ -303,7 +303,6 @@ textarea {
 
 .page-section {
     height: auto;
-    min-height: 720px;
 }
 
 .page-section-half {

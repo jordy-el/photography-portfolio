@@ -5,11 +5,8 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|Quicksand" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
-    <% if content_for? :for_head %>
-        <%= yield :for_head %>
-    <% end %>
     </head>
 
     <body>

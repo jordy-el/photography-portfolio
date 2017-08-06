@@ -12,4 +12,9 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require vendor/modernizr-2.8.3.min
+//= require vendor/jquery-1.12.0.min
+//= require vendor/uikit.min
+//= require vendor/uikit-icons.min
+//= require plugins
 //= require_tree .
