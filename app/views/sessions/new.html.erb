@@ -1,5 +1,16 @@
-<%= form_for :session, url: session_path do |f| %>
-    <%= f.email_field :email %>
-    <%= f.password_field :password %>
-    <%= f.submit %>
-<% end %>
+<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+    <div class="uk-background-cover" style="background-image: url('https://krissiflynnphotography.files.wordpress.com/2017/03/d37b37ae-5a0a-44f9-887c-4d48a7745f05.jpg');" uk-height-viewport></div>
+    <div class="uk-padding-large">
+        <h1 class="handwriting">Log In</h1>
+        <%= form_for :session, url: session_path do |f| %>
+            <div class="uk-margin" uk-margin><%= f.label :email, class: 'uk-form-label custom-font-1' %></div>
+            <div class="uk-margin" uk-margin><%= f.email_field :email, class: 'uk-input' %></div>
+            <div class="uk-margin" uk-margin><%= f.label :password, class: 'uk-form-label custom-font-1' %></div>
+            <div class="uk-margin" uk-margin><%= f.password_field :password, class: 'uk-input' %></div>
+            <div class="uk-margin" uk-margin>
+                <%= f.submit 'Submit', class: 'uk-button uk-button-primary custom-font-1' %>
+                <%= link_to 'Back', root_path, class: 'uk-button uk-button-secondary custom-font-1', id: 'back-button' %>
+            </div>
+        <% end %>
+    </div>
+</div>
