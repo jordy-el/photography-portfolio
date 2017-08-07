@@ -3,10 +3,11 @@ class ParallaxesController < ApplicationController
 
   def update
     if @parallax.update_attributes(parallax_params)
+      flash[:success] = 'Update successful'
       redirect_to admin_url
     else
-      # TODO Implement errors
-      throw "INVALID"
+      flash[:failure] = 'Update failed'
+      redirect_to admin_url
     end
   end
 

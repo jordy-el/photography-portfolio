@@ -10,6 +10,13 @@
     </head>
 
     <body>
+        <% unless flash.empty? %>
+            <script>
+                <% flash.each do |name, message| %>
+                    <%= "UIkit.notification('#{message}', {pos: 'bottom-right', status: '#{name == 'success' ? 'success' : 'danger'}'});".html_safe %>
+                <% end %>
+            </script>
+        <% end %>
         <%= yield %>
     </body>
 </html>

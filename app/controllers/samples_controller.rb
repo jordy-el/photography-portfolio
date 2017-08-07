@@ -1,12 +1,13 @@
 class SamplesController < ApplicationController
-  before_action :set_sample, only: [:edit, :update]
+  before_action :set_sample
 
   def update
     if @sample.update_attributes(sample_params)
+      flash[:success] = 'Update successful'
       redirect_to admin_url
     else
-      # TODO Implement errors
-      throw "INVALID"
+      flash[:failure] = 'Update failed'
+      redirect_to admin_url
     end
   end
 
