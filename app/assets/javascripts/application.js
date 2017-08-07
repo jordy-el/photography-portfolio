@@ -19,10 +19,6 @@
 //= require plugins
 //= require_tree .
 
-$(document).on('turbolinks:load', function(event) {
-    console.log('ready');
-});
-
 document.addEventListener("turbolinks:load", function() {
     ready();
 });
