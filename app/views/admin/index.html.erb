@@ -1,7 +1,7 @@
-<ul class="uk-child-width-expand" uk-tab="animation: uk-animation-fade">
-    <li><a href="#">Bio/Contact</a></li>
-    <li><a href="#">Sample Images</a></li>
-    <li><a href="#">Parallaxes</a></li>
+<ul class="uk-child-width-expand" uk-tab="animation: uk-animation-fade" style="background-color: white;" uk-sticky>
+    <li style="padding-left: 0 !important;"><a style="padding: 1rem;" class="custom-font-1" href="#">Bio + Contact</a></li>
+    <li><a style="padding: 1rem;" class="custom-font-1" href="#">Samples</a></li>
+    <li><a style="padding: 1rem;" class="custom-font-1" href="#">Parallaxes</a></li>
 </ul>
 
 <ul class="uk-switcher uk-width-1-1">
@@ -16,4 +16,21 @@
     </li>
 </ul>
 
-<%= link_to 'Sign Out', sign_out_path, method: :delete %>
+<nav class="uk-navbar-container" style="background-color: #222 !important; height: 80px !important; z-index: 0;" uk-navbar>
+    <div class="uk-navbar-left"></div>
+    <div class="uk-navbar-center custom-font-1">
+        <ul class="uk-navbar-nav">
+            <li class="uk-navbar-item">
+                <div>
+                    <%= link_to 'Home', root_path, class: 'custom-font-1', style: 'color: #d3d3d3;', method: :delete %>
+                </div>
+            </li>
+            <li class="uk-navbar-item">
+                <div>
+                    <%= link_to 'Sign Out', sign_out_path, class: 'custom-font-1', style: 'color: #d3d3d3;', method: :delete %>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="uk-navbar-right" ></div>
+</nav>
