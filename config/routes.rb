@@ -14,8 +14,8 @@ Rails.application.routes.draw do
     patch 'admin', to: 'admin#update'
 
     scope 'admin' do
-      resources :samples, only: [:edit, :update]
-      resources :parallaxes, only: [:edit, :update]
+      resources :samples, only: :update
+      resources :parallaxes, only: :update
     end
   end
 

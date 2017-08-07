@@ -1,29 +1,19 @@
-<%= form_for @krissi, url: admin_path(@krissi), method: :patch do |f| %>
-    <%= f.label :linkedin %>
-    <%= f.text_field :linkedin %>
-    <%= f.label :instagram %>
-    <%= f.text_field :instagram %>
-    <%= f.label :facebook %>
-    <%= f.text_field :facebook %>
-    <%= f.label :contact_body %>
-    <%= f.text_area :contact_body %>
-    <%= f.label :bio_body %>
-    <%= f.text_area :bio_body %>
-    <%= f.label :bio_image %>
-    <%= f.file_field :bio_image %>
-    <%= f.submit 'Save' %>
-<% end %>
+<ul class="uk-child-width-expand" uk-tab="animation: uk-animation-fade">
+    <li><a href="#">Bio/Contact</a></li>
+    <li><a href="#">Sample Images</a></li>
+    <li><a href="#">Parallaxes</a></li>
+</ul>
 
-<% @krissi.samples.each do |s| %>
-    <%= link_to edit_sample_path(s) do %>
-        <%= image_tag s.image.url(:thumb), height: '200', width: '200' %>
-    <% end %>
-<% end %>
+<ul class="uk-switcher uk-width-1-1">
+    <li>
+        <%= render 'admin_form' %>
+    </li>
+    <li>
+        <%= render 'sample_list' %>
+    </li>
+    <li>
+        <%= render 'parallax_list' %>
+    </li>
+</ul>
 
-<% @krissi.parallaxes.each do |p| %>
-    <%= link_to edit_parallax_path(p) do %>
-        <%= image_tag p.image.url, height: '400', width: '500' %>
-    <% end %>
-<% end %>
-
-<%= link_to "Sign Out", sign_out_path, method: :delete %>
+<%= link_to 'Sign Out', sign_out_path, method: :delete %>

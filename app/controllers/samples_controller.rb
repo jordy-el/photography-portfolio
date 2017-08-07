@@ -1,9 +1,6 @@
 class SamplesController < ApplicationController
   before_action :set_sample, only: [:edit, :update]
 
-  def edit
-  end
-
   def update
     if @sample.update_attributes(sample_params)
       redirect_to admin_url

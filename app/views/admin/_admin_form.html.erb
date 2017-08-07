@@ -1,0 +1,43 @@
+<div class="uk-container-small uk-position-medium uk-position-top-center uk-height-1-1">
+    <%= form_for @krissi, url: admin_path(@krissi), method: :patch, html: { class: 'uk-form-horizontal uk-width-1-1' } do |f| %>
+        <div class="uk-margin">
+            <%= f.label :linkedin, class: 'uk-form-label', for: 'krissi_linkedin' %>
+            <div class="uk-form-controls">
+                <%= f.text_field :linkedin, class: 'uk-input' %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.label :instagram, class: 'uk-form-label', for: 'krissi_instagram' %>
+            <div class="uk-form-controls">
+                <%= f.text_field :instagram, class: 'uk-input' %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.label :facebook, class: 'uk-form-label', for: 'krissi_facebook' %>
+            <div class="uk-form-controls">
+                <%= f.text_field :facebook, class: 'uk-input' %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.label :contact_body, class: 'uk-form-label', for: 'krissi_contact_body' %>
+            <div class="uk-form-controls">
+                <%= f.text_area :contact_body, class: 'uk-textarea' %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.label :bio_body, class: 'uk-form-label', for: 'krissi_bio_body' %>
+            <div class="uk-form-controls">
+                <%= f.text_area :bio_body, class: 'uk-textarea' %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.label :bio_image, class: 'uk-form-label', for: 'krissi_bio_image' %>
+            <div class="uk-form-controls">
+                <%= f.file_field :bio_image %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.submit 'Save', class: 'uk-button uk-button-primary uk-width-1-1' %>
+        </div>
+    <% end %>
+</div>
