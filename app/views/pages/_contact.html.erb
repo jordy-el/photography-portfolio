@@ -26,7 +26,7 @@
                         </p>
                     </div>
                     <div class="uk-width-1-1">
-                        <%= simple_format(@krissi.contact_body, class: 'uk-text-center custom-font-2') %>
+                        <%= simple_format(@krissi.contact_body.html_safe, class: 'uk-text-center custom-font-2') %>
                     </div>
                 </div>
             </header>
