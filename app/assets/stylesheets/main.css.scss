@@ -309,3 +309,15 @@ textarea {
     height: 90vh;
     min-height: 480px;
 }
+
+.uk-sticky-placeholder {
+  margin: 0 !important;
+}
+
+.uk-tab::before {
+  left: 0 !important;
+}
+
+.admin-tab {
+  padding: 1rem 0 !important;
+}
