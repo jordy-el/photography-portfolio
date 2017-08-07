@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require turbolinks
 //= require vendor/modernizr-2.8.3.min
 //= require vendor/jquery-1.12.0.min
 //= require vendor/uikit.min
