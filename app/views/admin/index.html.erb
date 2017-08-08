@@ -1,13 +1,13 @@
 <%= render 'header' %>
 
 <div style="height: 80vh;" class="uk-grid-collapse uk-child-width-1-3" uk-grid>
-    <div style="overflow: scroll;" class="uk-section-muted">
+    <div style="overflow: scroll; backface-visibility: hidden;" class="uk-section-muted">
         <%= render 'admin_form' %>
     </div>
-    <div style="overflow: scroll;" class="uk-section-muted">
+    <div style="overflow: scroll; backface-visibility: hidden;" class="uk-section-muted">
         <%= render 'sample_list' %>
     </div>
-    <div style="overflow: scroll;" class="uk-section-muted">
+    <div style="overflow: scroll; backface-visibility: hidden;" class="uk-section-muted">
         <%= render 'parallax_list' %>
     </div>
 </div>

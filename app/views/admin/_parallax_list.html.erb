@@ -1,5 +1,5 @@
 <h3 class="uk-heading-divider uk-text-center custom-font-1" style="background-color: white; margin-bottom: 0 !important; padding-top: 10px !important;">Parallaxes</h3>
-<div class="uk-grid-collapse uk-child-width-1-1" uk-grid></div>
+<div class="uk-grid-collapse uk-child-width-1-1"" uk-grid></div>
     <% @krissi.parallaxes.order(id: :asc).find_each do |p| %>
         <%= link_to '', class: 'uk-inline-clip uk-transition-toggle', 'uk-toggle' => "target: ##{p.id}" do %>
             <%= image_tag p.image.url, class: 'uk-width-1-1' %>
