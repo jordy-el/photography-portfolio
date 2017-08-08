@@ -1,5 +1,6 @@
-<div class="uk-container-small uk-position-medium uk-position-top-center uk-height-1-1" style="top: -1rem; position: relative !important; margin-bottom: 6rem;">
-    <%= form_for @krissi, url: admin_path(@krissi), method: :patch, html: { class: 'uk-form-horizontal uk-width-1-1' } do |f| %>
+<h1 class="uk-heading-divider uk-text-center custom-font-1" style="background-color: white; margin-bottom: 0 !important; padding-top: 10px !important;">Info</h1>
+<div class="uk-width-1-1" style="padding: 0 1rem;">
+    <%= form_for @krissi, url: admin_path(@krissi), method: :patch, html: { class: 'uk-form-stacked' } do |f| %>
         <div class="uk-margin">
             <%= f.label :linkedin, class: 'uk-form-label', for: 'krissi_linkedin' %>
             <div class="uk-form-controls">
@@ -31,7 +32,13 @@
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.label :bio_image, class: 'uk-form-label', for: 'krissi_bio_image' %>
+            <label for="bio_image_show" class="uk-form-label">Current Image</label>
+            <div class="uk-form-controls">
+                <%= image_tag @krissi.bio_image.url, id: 'bio_image_show' %>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <%= f.label :bio_image, 'Leave this empty if you want to keep the current photo', class: 'uk-form-label', for: 'krissi_bio_image' %>
             <div class="uk-form-controls">
                 <%= f.file_field :bio_image %>
             </div>
