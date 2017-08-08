@@ -1,4 +1,4 @@
-<h1 class="uk-heading-divider uk-text-center custom-font-1" style="background-color: white; margin-bottom: 0 !important; padding-top: 10px !important;">Samples</h1>
+<h3 class="uk-heading-divider uk-text-center custom-font-1" style="background-color: white; margin-bottom: 0 !important; padding-top: 10px !important;">Samples</h3>
 <div class="uk-grid-collapse uk-child-width-1-1" uk-grid>
     <% @krissi.samples.order(id: :asc).find_each do |s| %>
         <%= link_to '', class: 'uk-inline-clip uk-transition-toggle', 'uk-toggle' => "target: ##{s.id}" do %>
