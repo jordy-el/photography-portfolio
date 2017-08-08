@@ -18,7 +18,3 @@
 //= require vendor/uikit-icons.min
 //= require plugins
 //= require_tree .
-
-document.addEventListener("turbolinks:load", function() {
-    ready();
-});
