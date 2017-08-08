@@ -4,33 +4,33 @@
         <%= link_to '', class: 'uk-inline-clip uk-transition-toggle', 'uk-toggle' => "target: ##{s.id}" do %>
             <%= image_tag s.image.url(:thumb), class: 'uk-width-1-1', style: 'backface-visibility: hidden;' %>
             <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove uk-text-center">Edit Sample</p>
+                <p class="uk-h4 uk-margin-remove uk-text-center custom-font-1">Edit Sample</p>
             </div>
             <div id="<%= s.id %>" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
                     <button class="uk-modal-close-default" type="button" uk-close></button>
-                    <h2 class="uk-modal-title">Edit Sample</h2>
+                    <h2 class="uk-modal-title custom-font-1">Edit Sample</h2>
                     <%= image_tag s.image.url(:thumb), class: 'uk-width-1-1' %>
                     <div class="uk-width-1-1">
                         <%= form_for s, html: { class: 'uk-form-stacked uk-width-1-1' } do |f| %>
                             <div class="uk-margin">
-                                <%= f.label :caption, class: 'uk-form-label', for: 'sample_caption' %>
-                                <%= f.text_field :caption, class: 'uk-input' %>
+                                <%= f.label :caption, class: 'uk-form-label custom-font-1', for: 'sample_caption' %>
+                                <%= f.text_field :caption, class: 'uk-input custom-font-2' %>
                             </div>
                             <div class="uk-margin">
-                                <%= f.label :category, class: 'uk-form-label', for: 'sample_category' %>
-                                <%= f.text_field :category, class: 'uk-input' %>
+                                <%= f.label :category, class: 'uk-form-label custom-font-1', for: 'sample_category' %>
+                                <%= f.text_field :category, class: 'uk-input custom-font-2' %>
                             </div>
                             <div class="uk-margin">
-                                <%= f.label :alt, 'Describe the photo (for google)', class: 'uk-form-label', for: 'sample_alt' %>
-                                <%= f.text_field :alt, class: 'uk-input' %>
+                                <%= f.label :alt, 'Describe the photo (for google)', class: 'uk-form-label custom-font-1', for: 'sample_alt' %>
+                                <%= f.text_field :alt, class: 'uk-input custom-font-2' %>
                             </div>
                             <div class="uk-margin">
-                                <%= f.label :image, 'Leave this empty if you want to keep the current photo', class: 'uk-form-label', for: 'sample_image' %>
-                                <%= f.file_field :image %>
+                                <%= f.label :image, 'Leave this empty if you want to keep the current photo', class: 'uk-form-label custom-font-1', for: 'sample_image' %>
+                                <%= f.file_field :image, class: 'custom-font-2' %>
                             </div>
                             <div class="uk-margin">
-                                <%= f.submit 'Save', class: 'uk-button uk-button-primary uk-width-1-1' %>
+                                <%= f.submit 'Save', class: 'uk-button uk-button-primary uk-width-1-1 custom-font-1' %>
                             </div>
                         <% end %>
                     </div>

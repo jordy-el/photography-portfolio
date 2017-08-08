@@ -2,49 +2,49 @@
 <div class="uk-width-1-1" style="padding: 0 1rem;">
     <%= form_for @krissi, url: admin_path(@krissi), method: :patch, html: { class: 'uk-form-stacked' } do |f| %>
         <div class="uk-margin">
-            <%= f.label :linkedin, class: 'uk-form-label', for: 'krissi_linkedin' %>
+            <%= f.label :linkedin, class: 'uk-form-label custom-font-1', for: 'krissi_linkedin' %>
             <div class="uk-form-controls">
-                <%= f.text_field :linkedin, class: 'uk-input' %>
+                <%= f.text_field :linkedin, class: 'uk-input custom-font-2' %>
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.label :instagram, class: 'uk-form-label', for: 'krissi_instagram' %>
+            <%= f.label :instagram, class: 'uk-form-label custom-font-1', for: 'krissi_instagram' %>
             <div class="uk-form-controls">
-                <%= f.text_field :instagram, class: 'uk-input' %>
+                <%= f.text_field :instagram, class: 'uk-input custom-font-2' %>
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.label :facebook, class: 'uk-form-label', for: 'krissi_facebook' %>
+            <%= f.label :facebook, class: 'uk-form-label custom-font-1', for: 'krissi_facebook' %>
             <div class="uk-form-controls">
-                <%= f.text_field :facebook, class: 'uk-input' %>
+                <%= f.text_field :facebook, class: 'uk-input custom-font-2' %>
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.label :contact_body, class: 'uk-form-label', for: 'krissi_contact_body' %>
+            <%= f.label :contact_body, class: 'uk-form-label custom-font-1', for: 'krissi_contact_body' %>
             <div class="uk-form-controls">
-                <%= f.text_area :contact_body, class: 'uk-textarea' %>
+                <%= f.text_area :contact_body, class: 'uk-textarea custom-font-2' %>
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.label :bio_body, class: 'uk-form-label', for: 'krissi_bio_body' %>
+            <%= f.label :bio_body, class: 'uk-form-label custom-font-1', for: 'krissi_bio_body' %>
             <div class="uk-form-controls">
-                <%= f.text_area :bio_body, class: 'uk-textarea' %>
+                <%= f.text_area :bio_body, class: 'uk-textarea custom-font-2' %>
             </div>
         </div>
         <div class="uk-margin">
-            <label for="bio_image_show" class="uk-form-label">Current Image</label>
+            <label for="bio_image_show" class="uk-form-label custom-font-1">Current Image</label>
             <div class="uk-form-controls">
                 <%= image_tag @krissi.bio_image.url, id: 'bio_image_show' %>
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.label :bio_image, 'Leave this empty if you want to keep the current photo', class: 'uk-form-label', for: 'krissi_bio_image' %>
+            <%= f.label :bio_image, 'Leave this empty if you want to keep the current photo', class: 'uk-form-label custom-font-1', for: 'krissi_bio_image' %>
             <div class="uk-form-controls" style="overflow: hidden;">
-                <%= f.file_field :bio_image %>
+                <%= f.file_field :bio_image, class: 'custom-font-2' %>
             </div>
         </div>
         <div class="uk-margin">
-            <%= f.submit 'Save', class: 'uk-button uk-button-primary uk-width-1-1' %>
+            <%= f.submit 'Save', class: 'uk-button uk-button-primary uk-width-1-1 custom-font-1' %>
         </div>
     <% end %>
 </div>
