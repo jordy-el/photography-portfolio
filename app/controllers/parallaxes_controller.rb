@@ -2,7 +2,7 @@ class ParallaxesController < ApplicationController
   before_action :set_parallax
 
   def update
-    if @parallax.update_attributes(parallax_params)
+    if parallax_params && @parallax.update_attributes(parallax_params)
       flash[:success] = 'Update successful'
       redirect_to admin_url
     else
@@ -18,6 +18,7 @@ class ParallaxesController < ApplicationController
   end
 
   def parallax_params
+    return false unless params[:parallax]
     params.require(:parallax).permit(:image)
   end
 end
