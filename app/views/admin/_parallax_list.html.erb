@@ -2,7 +2,7 @@
 <div class="uk-grid-collapse uk-child-width-1-1"" uk-grid></div>
     <% @krissi.parallaxes.order(id: :asc).find_each do |p| %>
         <%= link_to '', class: 'uk-inline-clip uk-transition-toggle', 'uk-toggle' => "target: ##{p.id}" do %>
-            <%= image_tag p.image.url, class: 'uk-width-1-1' %>
+            <%= image_tag p.image.url, class: 'uk-width-1-1', style: 'backface-visibility: hidden;' %>
             <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                 <p class="uk-h4 uk-margin-remove uk-text-center">Edit Parallax</p>
             </div>
