@@ -2,7 +2,7 @@ class SamplesController < ApplicationController
   before_action :set_sample
 
   def update
-    if @sample.update_attributes(sample_params)
+    if @sample.update_attributes!(sample_params)
       flash[:success] = 'Update successful'
       redirect_to admin_url
     else
