@@ -12,7 +12,7 @@
  *
  *= require_tree .
  *= require vendor/normalize
- *= require vendor/uikit.min
+ *= require vendor/uikit
  *= require vendor/ui-button.min
  *= require vendor/ui-icon.min
  *= require main
