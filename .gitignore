@@ -18,10 +18,13 @@
 
 .byebug_history
 
-.idea/
+.idea
 
 public/img/*
 public/system/
 
 # Ignore application configuration
 /config/application.yml
+
+favicons.zip
+Untitled-1.png
